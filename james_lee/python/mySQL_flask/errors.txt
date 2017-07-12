@@ -1,0 +1,17 @@
+1.  line 8
+      host': 'localhost',
+             ^
+  SyntaxError: invalid syntax
+
+  fixed with adding a ' in front of host.
+
+
+2. DATABASE_URI = "mysql://{}:{}@127.0.0.1:{}/{}".format(config['user'], config['password'], config['port'], config['database'])
+  KeyError: 'password'
+
+  fixed with correcting 'passwor' to 'password'
+
+3. DATABASE_URI = "mysql://{}:{}@127.0.0.1:{}/{}".format(config['user'], config['password'], config['port'], config['database'])
+  KeyError: 'port'
+
+  fixed with correcting '' to 'port'
